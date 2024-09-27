@@ -161,20 +161,20 @@ public class FrmRegistrarse extends javax.swing.JFrame {
 
         cbCiudades.setBackground(new java.awt.Color(136, 201, 239));
 
-        lblApellidoMaterno.setText("Apellido Materno");
         lblApellidoMaterno.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        lblApellidoMaterno.setText("Apellido Materno");
 
-        lblNombre1.setText("Nombre (s)");
         lblNombre1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblNombre1.setText("Nombre (s)");
 
-        lblCiudad.setText("Ciudad");
         lblCiudad.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        lblCiudad.setText("Ciudad");
 
-        lblNacimiento.setText("Fecha de nacimiento");
         lblNacimiento.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblNacimiento.setText("Fecha de nacimiento");
 
-        lblApellidoPaterno2.setText("Apellido Paterno");
         lblApellidoPaterno2.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        lblApellidoPaterno2.setText("Apellido Paterno");
 
         campoTextoApellidoMaterno.setBackground(new java.awt.Color(136, 201, 239));
 
@@ -205,11 +205,11 @@ public class FrmRegistrarse extends javax.swing.JFrame {
             }
         });
 
-        lblContraseña.setText("Contraseña");
         lblContraseña.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        lblContraseña.setText("Contraseña");
 
-        lblCorreo.setText("Correo Electronico");
         lblCorreo.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        lblCorreo.setText("Correo Electronico");
 
         pwdContrasena.setBackground(new java.awt.Color(136, 201, 239));
 
@@ -313,9 +313,19 @@ public class FrmRegistrarse extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void campoTextoCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTextoCorreoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTextoCorreoActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+        inicio.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
     private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
         // TODO add your handling code here:
-                
+
         ClienteGuardarDTO clienteGuardarDTO = new ClienteGuardarDTO();
 
         clienteGuardarDTO.setApelldioMaterno(campoTextoApellidoMaterno.getText());
@@ -325,7 +335,7 @@ public class FrmRegistrarse extends javax.swing.JFrame {
         clienteGuardarDTO.setCorreo(campoTextoCorreo.getText());
         clienteGuardarDTO.setNombres(campoTextoNombre.getText());
         clienteGuardarDTO.setNacimiento(Date.valueOf(datePickerNacimiento.getDate()));
-        
+
         try {
 
             clienteNegocio.guardar(clienteGuardarDTO);
@@ -338,16 +348,6 @@ public class FrmRegistrarse extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_btnRegistrarseActionPerformed
-
-    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        // TODO add your handling code here:
-        inicio.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnCancelarActionPerformed
-
-    private void campoTextoCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTextoCorreoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campoTextoCorreoActionPerformed
 
     private void campoTextoApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTextoApellidoPaternoActionPerformed
         // TODO add your handling code here:
