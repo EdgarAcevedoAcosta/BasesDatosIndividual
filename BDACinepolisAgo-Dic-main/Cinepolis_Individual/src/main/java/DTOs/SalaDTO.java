@@ -9,5 +9,49 @@ package DTOs;
  * @author Edgar Arturo Acevedo Acosta 245769
  */
 public class SalaDTO {
+    double Precio;
+    int minutosLimpieza;
+    String nombre;
+    int numeroAsientosDisponibles;
+
+    public SalaDTO(double Precio, int minutosLimpieza, String nombre, int numeroAsientosDisponibles) {
+        this.Precio = Precio;
+        this.minutosLimpieza = minutosLimpieza;
+        this.nombre = nombre;
+        this.numeroAsientosDisponibles = numeroAsientosDisponibles;
+    }
+
+    public double getPrecio() {
+        return Precio;
+    }
+
+    public void setPrecio(double Precio) {
+        this.Precio = Precio;
+    }
+
+    public int getMinutosLimpieza() {
+        return minutosLimpieza;
+    }
+
+    public void setMinutosLimpieza(int minutosLimpieza) {
+        this.minutosLimpieza = minutosLimpieza;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getNumeroAsientosDisponibles() {
+        return numeroAsientosDisponibles;
+    }
+
+    public void setNumeroAsientosDisponibles(int numeroAsientosDisponibles) {
+        this.numeroAsientosDisponibles = numeroAsientosDisponibles;
+    }
+    
     
 }
