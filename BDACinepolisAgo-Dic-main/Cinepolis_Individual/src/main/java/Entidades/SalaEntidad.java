@@ -2,19 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package DTOs;
+package Entidades;
 
 /**
  *
  * @author Edgar Arturo Acevedo Acosta 245769
  */
-public class SalaDTO {
+public class SalaEntidad {
     double Precio;
     int minutosLimpieza;
     String nombre;
     int numeroAsientosDisponibles;
 
-    public SalaDTO(double Precio, int minutosLimpieza, String nombre, int numeroAsientosDisponibles) {
+    public SalaEntidad(double Precio, int minutosLimpieza, String nombre, int numeroAsientosDisponibles) {
         this.Precio = Precio;
         this.minutosLimpieza = minutosLimpieza;
         this.nombre = nombre;
